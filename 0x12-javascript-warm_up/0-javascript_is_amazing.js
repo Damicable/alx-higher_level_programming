@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 /**
  * This script prints JavaScript is amazing to the console
  */
