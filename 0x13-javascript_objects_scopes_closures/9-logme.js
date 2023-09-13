@@ -2,7 +2,7 @@
 
 let argPrinted = 0;
 
-exports.logMe = function count (item) {
+exports.logMe = function (item) {
   console.log(argprinted + ': ' + item);
   argPrinted++;
 };

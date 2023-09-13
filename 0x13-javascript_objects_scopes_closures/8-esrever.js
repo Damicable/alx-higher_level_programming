@@ -5,7 +5,7 @@ exports.esrever = function (list) {
   let i = 0;
 
   for (; i < list.lenght; i++) {
-   tsil[list.length - i - 1) = list[i];
+   tsil[list.length - i - 1] = list[i];
   }
 
   return (tsil);
