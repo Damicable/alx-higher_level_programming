@@ -1,8 +1,7 @@
 #!/usr/bin/node
+let argumentsPrinted = 0;
 
-let argPrinted = 0;
-
-exports.logMe = function (item) {
-  console.log(argprinted + ': ' + item);
-  argPrinted++;
+exports.logMe = function(item) {
+  console.log(`${argumentsPrinted}: ${item}`);
+  argumentsPrinted++;
 };
