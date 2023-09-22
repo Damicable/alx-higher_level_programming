@@ -210,6 +210,8 @@ Results must be sorted in ascending order by cities.id
 Results must be display as they are in the example below (<state name>: (<city id>) <city name>)
 Your code should not be executed when imported
 
+File: model_city.py, 14-model_city_fetch_by_state.py
+
 15. City relationship
 #advanced
 Improve the files model_city.py and model_state.py, and save them as relationship_city.py and relationship_state.py:
@@ -227,6 +229,8 @@ Your script should connect to a MySQL server running on localhost at port 3306
 You must use the cities relationship for all State objects
 Your code should not be executed when imported
 
+File: relationship_city.py, relationship_state.py, 100-relationship_states_cities.py
+
 16. List relationship
 #advanced
 Write a script that lists all State objects, and corresponding City objects, contained in the database hbtn_0e_101_usa
@@ -241,3 +245,22 @@ Results must be displayed as they are in the example below
 Your code should not be executed when imported
 
 https://intranet.alxswe.com/projects/283#:~:text=17.%20From%20city,executed%20when%20imported
+
+101-relationship_states_cities_list.py
+
+17. From city
+#advanced
+Score: 0.0% (Checks completed: 0.0%)
+Write a script that lists all City objects from the database hbtn_0e_101_usa
+
+Your script should take 3 arguments: mysql username, mysql password and database name
+You must use the module SQLAlchemy
+Your script should connect to a MySQL server running on localhost at port 3306
+You must use only one query to the database
+You must use the state relationship to access to the State object linked to the City object
+Results must be sorted in ascending order by cities.id
+Results must be displayed as they are in the example below
+Your code should not be executed when imported
+<city id>: <city name> -> <state name>
+
+File: 102-relationship_cities_states_list.py
