@@ -9,18 +9,18 @@ def find_peak(list_of_integers):
 
     length = len(list_of_integers)
     k = int(length / 2)
-    l = list_of_integers
+    lis = list_of_integers
 
     if k - 1 < 0 and k + 1 >= length:
-        return l[k]
+        return lis[k]
     elif k - 1 < 0:
-        return l[k] if l[k] > l[k + 1] else l[k + 1]
+        return lis[k] if lis[k] > lis[k + 1] else lis[k + 1]
     elif k + 1 >= length:
-        return l[k] if l[k] > l[k - 1] else l[k - 1]
+        return lis[k] if lis[k] > lis[k - 1] else lis[k - 1]
 
-    if l[k - 1] < l[k] > l[k + 1]:
-        return l[k]
+    if lis[k - 1] < lis[k] > lis[k + 1]:
+        return lis[k]
 
-    if l[k + 1] > l[k - 1]:
-        return find_peak(l[k:])
-    return find_peak(l[:k])
+    if lis[k + 1] > lis[k - 1]:
+        return find_peak(lis[k:])
+    return find_peak(lis[:k])
