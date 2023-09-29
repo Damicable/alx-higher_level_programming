@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""This script sends a POST request to http://0.0.0.0:5000/search_user with a given letter.
-- The letter is sent as the value of the variable `q`.
-- If no letter is provided, sends `q=""`.
+"""This script sends a POST request to http://0.0.0.0:5000/search_user
+with a given letter. - If no letter is provided, sends `q=""`
+- The letter is sent as the value of the variable `q`
 Usage: ./8-json_api.py <letter>
 """
 import sys
