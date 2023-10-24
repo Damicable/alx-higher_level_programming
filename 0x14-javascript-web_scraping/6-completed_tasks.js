@@ -13,6 +13,6 @@ request(process.argv[2], function (error, response, body) {
           completed[todo.userId] += 1;
         }
       });
-      console.log(completed);
+    console.log(completed);
   }
 });
